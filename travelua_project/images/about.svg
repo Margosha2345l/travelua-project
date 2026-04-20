@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+    <defs>
+      <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+        <stop offset="0%" stop-color="#1d4ed8"/>
+        <stop offset="100%" stop-color="#93c5fd"/>
+      </linearGradient>
+    </defs>
+    <rect width="1200" height="700" fill="url(#g)"/>
+    <circle cx="180" cy="120" r="70" fill="rgba(255,255,255,.15)"/>
+    <circle cx="1020" cy="580" r="120" fill="rgba(255,255,255,.12)"/>
+    <path d="M0 520 C180 430, 320 600, 520 520 S900 420, 1200 520 L1200 700 L0 700 Z" fill="rgba(255,255,255,.18)"/>
+    <text x="70" y="330" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700" fill="white">TravelUA</text>
+    <text x="72" y="390" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="white">Туристична агенція • Навчальний проєкт</text>
+    </svg>

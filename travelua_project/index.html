@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelUA — Туристична агенція</title>
+  <!-- Сайт розроблено студентом [Ваше ПІБ], група [Ваша група] -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+<header>
+  <div class="container header-wrap">
+    <div class="logo">TravelUA</div>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="tours.html">Тури</a>
+      <a href="about.html">Про нас</a>
+      <a href="contacts.html">Контакти</a>
+    </nav>
+  </div>
+</header>
+
+
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Бронювання турів по Україні</h1>
+      <p>Зручний вибір туру, проста форма бронювання та автоматичний розрахунок вартості в JavaScript.</p>
+      <a class="btn" href="tours.html">Переглянути тури</a>
+      <a class="btn btn-secondary" href="about.html">Дізнатися більше</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Популярні напрямки</h2>
+      <p class="section-subtitle">Оберіть один із найпопулярніших турів нашої агенції.</p>
+      <div class="cards">
+        
+        <div class="card">
+          <img src="images/karpaty.svg" alt="Карпати Weekend">
+          <div class="card-body">
+            <span class="badge">3 дні / 2 ночі</span>
+            <h3>Карпати Weekend</h3>
+            <p>Гірські краєвиди, свіже повітря та відпочинок від міста.</p>
+            <div class="price">3200 грн / 1 особа</div>
+            <button onclick="openBooking('Карпати Weekend', 3200)">Забронювати</button>
+          </div>
+        </div>
+    
+        
+        <div class="card">
+          <img src="images/lviv.svg" alt="Львів історичний">
+          <div class="card-body">
+            <span class="badge">2 дні / 1 ніч</span>
+            <h3>Львів історичний</h3>
+            <p>Культурна подорож із екскурсіями та кавовими локаціями.</p>
+            <div class="price">2800 грн / 1 особа</div>
+            <button onclick="openBooking('Львів історичний', 2800)">Забронювати</button>
+          </div>
+        </div>
+    
+        
+        <div class="card">
+          <img src="images/odesa.svg" alt="Одеса море">
+          <div class="card-body">
+            <span class="badge">4 дні / 3 ночі</span>
+            <h3>Одеса море</h3>
+            <p>Морський відпочинок і яскраві враження для всієї компанії.</p>
+            <div class="price">4100 грн / 1 особа</div>
+            <button onclick="openBooking('Одеса море', 4100)">Забронювати</button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container grid-2">
+      <div class="info-box">
+        <h2 class="section-title">Чому саме TravelUA?</h2>
+        <ul class="list">
+          <li>6 готових туристичних турів із фіксованими цінами.</li>
+          <li>Зручне бронювання без перезавантаження сторінки.</li>
+          <li>Розрахунок суми виконується повністю на JavaScript.</li>
+          <li>Знижка 10% для груп від 4 осіб.</li>
+          <li>Сайт працює локально у браузері без сервера.</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <h2 class="section-title">Швидка інформація</h2>
+        <div class="stats">
+          <div class="stat"><strong>6</strong>турів</div>
+          <div class="stat"><strong>4</strong>сторінки</div>
+          <div class="stat"><strong>100%</strong>HTML/CSS/JS</div>
+          <div class="stat"><strong>10%</strong>знижка групам</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+<footer>
+  <div class="container footer-wrap">
+    <div>Виконав(ла): Ваше ПІБ</div>
+    <div>Група: Ваша група</div>
+    <div>TravelUA © 2026</div>
+  </div>
+</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelUA — Тури</title>
+  <!-- Сайт розроблено студентом [Ваше ПІБ], група [Ваша група] -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+<header>
+  <div class="container header-wrap">
+    <div class="logo">TravelUA</div>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="tours.html">Тури</a>
+      <a href="about.html">Про нас</a>
+      <a href="contacts.html">Контакти</a>
+    </nav>
+  </div>
+</header>
+
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Наші тури</h1>
+      <p>Оберіть подорож, натисніть «Забронювати», задайте дату та кількість осіб.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Каталог турів</h2>
+      <p class="section-subtitle">Усі варіанти доступні для локального перегляду та тестування.</p>
+
+      <div class="cards">
+        
+        <div class="card">
+          <img src="images/karpaty.svg" alt="Карпати Weekend">
+          <div class="card-body">
+            <span class="badge">3 дні / 2 ночі</span>
+            <h3>Карпати Weekend</h3>
+            <p>Гірські краєвиди, прогулянки, чан та місцева кухня.</p>
+            <div class="price">3200 грн / 1 особа</div>
+            <button onclick="openBooking('Карпати Weekend', 3200)">Забронювати</button>
+          </div>
+        </div>
+    
+
+        <div class="card">
+          <img src="images/lviv.svg" alt="Львів історичний">
+          <div class="card-body">
+            <span class="badge">2 дні / 1 ніч</span>
+            <h3>Львів історичний</h3>
+            <p>Старе місто, екскурсії, кава та архітектура.</p>
+            <div class="price">2800 грн / 1 особа</div>
+            <button onclick="openBooking('Львів історичний', 2800)">Забронювати</button>
+          </div>
+        </div>
+    
+
+        <div class="card">
+          <img src="images/odesa.svg" alt="Одеса море">
+          <div class="card-body">
+            <span class="badge">4 дні / 3 ночі</span>
+            <h3>Одеса море</h3>
+            <p>Пляжний відпочинок, прогулянки містом і морський настрій.</p>
+            <div class="price">4100 грн / 1 особа</div>
+            <button onclick="openBooking('Одеса море', 4100)">Забронювати</button>
+          </div>
+        </div>
+    
+
+        <div class="card">
+          <img src="images/bukovel.svg" alt="Буковель Active">
+          <div class="card-body">
+            <span class="badge">3 дні / 2 ночі</span>
+            <h3>Буковель Active</h3>
+            <p>Активний відпочинок у горах і панорамні підйомники.</p>
+            <div class="price">5200 грн / 1 особа</div>
+            <button onclick="openBooking('Буковель Active', 5200)">Забронювати</button>
+          </div>
+        </div>
+    
+
+        <div class="card">
+          <img src="images/zakarpattya.svg" alt="Закарпаття Relax">
+          <div class="card-body">
+            <span class="badge">3 дні / 2 ночі</span>
+            <h3>Закарпаття Relax</h3>
+            <p>Термальні води, дегустації та спокійний релакс.</p>
+            <div class="price">4700 грн / 1 особа</div>
+            <button onclick="openBooking('Закарпаття Relax', 4700)">Забронювати</button>
+          </div>
+        </div>
+    
+
+        <div class="card">
+          <img src="images/kamianets.svg" alt="Кам’янець-Подільський">
+          <div class="card-body">
+            <span class="badge">2 дні / 1 ніч</span>
+            <h3>Кам’янець-Подільський</h3>
+            <p>Фортеця, каньйон і насичена історична програма.</p>
+            <div class="price">3500 грн / 1 особа</div>
+            <button onclick="openBooking('Кам’янець-Подільський', 3500)">Забронювати</button>
+          </div>
+        </div>
+    
+      </div>
+
+      <div class="booking-panel" id="bookingPanel">
+        <h2 class="section-title" style="font-size:28px;">Форма бронювання</h2>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="tourName">Обраний тур</label>
+            <input type="text" id="tourName" readonly>
+          </div>
+          <div class="form-group">
+            <label for="tourPrice">Ціна за 1 особу (грн)</label>
+            <input type="number" id="tourPrice" readonly>
+          </div>
+          <div class="form-group">
+            <label for="tourDate">Дата поїздки</label>
+            <input type="date" id="tourDate">
+          </div>
+          <div class="form-group">
+            <label for="tourPeople">Кількість осіб</label>
+            <input type="number" id="tourPeople" min="1" value="1">
+          </div>
+        </div>
+        <div style="margin-top:16px;">
+          <button onclick="calculateTotal()">Розрахувати вартість</button>
+        </div>
+        <div class="result" id="bookingResult"></div>
+        <p class="small-note">Примітка: якщо кількість осіб 4 або більше, автоматично застосовується знижка 10%.</p>
+      </div>
+    </div>
+  </section>
+
+  
+<footer>
+  <div class="container footer-wrap">
+    <div>Виконав(ла): Ваше ПІБ</div>
+    <div>Група: Ваша група</div>
+    <div>TravelUA © 2026</div>
+  </div>
+</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
